@@ -213,6 +213,9 @@
   max-width: 80%;
   overflow-x: scroll;
 }
+.nav-mob-cross {
+  display: none;
+}
 .section-focus {
   background-color: #d5f0f6;
   display: flex;
