@@ -159,30 +159,5 @@
         </div>
       </div>
     </section>
-    <script>
-      let navControllerBtn = document.querySelector(".nav-mob-btn");
-      let layout = document.querySelector(".layout");
-      let navbar = document.querySelector(".navbar");
-      let crossBtn = document.querySelector(".nav-mob-cross");
-
-      function handleNavar() {
-        navControllerBtn.childNodes.forEach((e) => {
-          if (e.classList.contains("fa-bars")) {
-            e.classList.remove("fa-bars");
-            layout.style.display = "block";
-            e.classList.add("fa-xmark");
-            navbar.style.transform = "translateX(0)";
-          } else {
-            e.classList.add("fa-bars");
-            navbar.style.transform = "translateX(-100%)";
-            layout.style.display = "none";
-            e.classList.remove("fa-xmark");
-          }
-        });
-      }
-      navControllerBtn.addEventListener("click", handleNavar);
-      layout.addEventListener("click", handleNavar);
-      crossBtn.addEventListener("click", handleNavar);
-    </script>
   </body>
 </html>
