@@ -238,6 +238,7 @@
   border-radius: 20px;
   font-size: 1rem;
   position: relative;
+  border: 2px solid black;
 }
 .wealways-btn::after {
   content: "";
